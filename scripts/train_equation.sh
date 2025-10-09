@@ -9,7 +9,7 @@
 #SBATCH --mem=64G
 #SBATCH --gres=gpu:1
 #SBATCH --time=6:00:00
-#SBATCH --constraint=v100|a100|p6000
+#SBATCH --constraint=v100|a100
 
 echo "Date: $(date)"
 
