@@ -24,13 +24,15 @@ SAVE_PATH="baselines/buddy_run1"
 
 python -u baselines/train_buddy.py \
   --save_path "$SAVE_PATH" \
-  --batch_size 256 \
-  --eval_batch_size 128 \
-  --hidden_dim 256 \
-  --dropout 0.3 \
+  --batch_size 64 \
+  --eval_batch_size 64 \
+  --hidden_dim 128 \
+  --dropout 0.4 \
+  --layers 2 \
   --lr 1e-3 \
-  --epochs 10 \
+  --epochs 200 \
   --k_hop 2 \
+  --max_nodes 800 \
   --cuda
 
 EXIT_CODE=$?

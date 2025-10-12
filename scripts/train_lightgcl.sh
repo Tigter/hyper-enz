@@ -31,7 +31,7 @@ python -u baselines/train_lightgcl.py \
   --lr 1e-3 \
   --epochs 30 \
   --batch_size 512 \
-  --agg mean \
+  --agg attn \
   --lambda_cl 0.1 \
   --cuda
 

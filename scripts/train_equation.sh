@@ -44,7 +44,7 @@ cd "$PROJECT_ROOT" || exit 1
 
 # Configuration
 SAVE_PATH="brenda/run1"          # change per run
-CONFIG_NAME="hyper_graph_noise_07"  # see config/hypergraph_brenda_07_all_data.yml
+CONFIG_NAME="hyper_graph_noise_04"  
 INIT_CKPT=""                     # set to models/<path>/hit10 to resume; leave empty to start fresh
 
 # Data checks (required preprocessed files)

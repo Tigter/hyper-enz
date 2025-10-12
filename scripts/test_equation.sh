@@ -10,7 +10,6 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=0:30:00
 #SBATCH --constraint=v100|a100
-#SBATCH --constraint=v100|a100
 
 echo "Date: $(date)"
 echo "GPU Information:"

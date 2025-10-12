@@ -29,9 +29,11 @@ SPLIT="${2:-test}"
 
 python -u baselines/test_buddy.py \
   --init "$INIT_CKPT_DIR" \
-  --hidden_dim 256 \
-  --dropout 0.3 \
+  --hidden_dim 128 \
+  --dropout 0.4 \
+  --layers 2 \
   --k_hop 2 \
+  --max_nodes 800 \
   --cuda \
   --split "$SPLIT"
 
